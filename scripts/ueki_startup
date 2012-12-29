@@ -8,8 +8,7 @@ case "$1" in
     echo "test" > /tmp/unko2
     mpg321 /home/pi/ueki/sounds/initialized_l02c.mp3
     sleep 10
-    curl http://www.google.com > /home/pi/test
-    mpg321 /home/pi/ueki/sounds/hello_ueki.mp3
+    /home/pi/ueki/scripts/ueki_main.sh
     #sleep 5
     #mpg321 /home/pi/ueki/sounds/goodbye.mp3
 	;;
