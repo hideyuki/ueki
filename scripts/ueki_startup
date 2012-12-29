@@ -10,6 +10,8 @@ case "$1" in
     sleep 10
     curl http://www.google.com > /home/pi/test
     mpg321 /home/pi/ueki/sounds/hello_ueki.mp3
+    #sleep 5
+    #mpg321 /home/pi/ueki/sounds/goodbye.mp3
 	;;
 
   stop)
