@@ -1,4 +1,0 @@
-#ACTION=="add",KERNEL=="sr*",ATTRS{idVendor}=="1004",ATTRS{idProduct}=="61dd",RUN+="/home/pi/ueki/scripts/eject.sh %k 4"
-#ACTION=="add",ATTRS{idVendor}=="1004",ATTRS{idProduct}=="618f",RUN+="/sbin/modprobe usbserial vendor=0x1004 product=0x618f"
-
-SUBSYSTEM=="usb",ACTION=="add",ATTRS{idVendor}=="1004",ATTRS{idProduct}=="61dd", RUN+="usb_modeswitch '%b/%k'"

@@ -1,0 +1,2 @@
+SUBSYSTEM=="usb",ACTION=="add",ATTRS{idVendor}=="1004",ATTRS{idProduct}=="61dd", RUN+="usb_modeswitch '%b/%k'"
+#SUBSYSTEM=="usb",ACTION=="add",ATTRS{idVendor}=="1004",ATTRS{idProduct}=="61dd", RUN+="/bin/sh -c 'sleep 20; wvdial'"
