@@ -2,10 +2,14 @@
 
 case "$1" in
   start)
+    echo "test" > /tmp/unko
     sleep 10
-    wvdial
+    wvdial &
+    echo "test" > /tmp/unko2
+    mpg321 /home/pi/ueki/sounds/initialized_l02c.mp3
     sleep 10
     curl http://www.google.com > /home/pi/test
+    mpg321 /home/pi/ueki/sounds/hello_ueki.mp3
 	;;
 
   stop)
